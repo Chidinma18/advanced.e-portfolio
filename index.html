@@ -80,7 +80,7 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click">
+        <button class="mail__btn click" onclick="toggleModal()">
             <i class="fa-solid fa-envelope"></i>
         </button>
         <a href="#projects" class="scroll">
@@ -133,15 +133,15 @@
                     <form id="contact__form" onsubmit="contact(event)">
                         <div class="form__item">
                             <label class="form__item--label">Name</label>
-                            <input class="input" name="user_name" type="text" ></input>
+                            <input class="input" name="user_name" type="text" required></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">Email</label>
-                            <input class="input" name="user_email" type="email" ></input>
+                            <input class="input" name="user_email" type="email" required></input>
                         </div>
                         <div class="form__item">
                             <label class="form__item--label">Message</label>
-                            <textarea class="input" name="message" type="text" ></textarea>
+                            <textarea class="input" name="message" type="text" required></textarea>
                         </div>
                         <button id="contact__submit" class="form__submit">
                             Send it my way
