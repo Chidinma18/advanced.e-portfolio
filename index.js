@@ -17,8 +17,8 @@ function contact(event) {
             loading.classList.remove("modal__overlay--visible");
             alert(
                 "This email service is temporarily unavailable. Please contact me directly on mariamwill01@aol.com"
-            )
-        })
+            );
+        });
 
 }
 
