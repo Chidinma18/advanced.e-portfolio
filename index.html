@@ -21,12 +21,12 @@
 </head>
 
 <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
             <figure>
                 <img id="personal-logo" class="personal-logo-white" src="./assets/m-solid.svg" alt="">
             </figure>
-            <ul class="nav__link--list">
+            <ul class="nav__link--list" onclick="toggleModal()">
                 <li class="nav__link">
                     <a href="#" class="
                     nav__link--anchor
@@ -80,9 +80,11 @@
                 </div>
             </div>
         </header>
-        <button class="mail__btn click" onclick="toggleModal()">
-            <i class="fa-solid fa-envelope"></i>
-        </button>
+        <a href="#"> 
+            <button class="mail__btn click" onclick="toggleModal()">
+                <i class="fa-solid fa-envelope"></i>
+            </button>
+        </a>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click"></div>
         </a>
@@ -155,8 +157,16 @@
                         Thanks for the message! Looking forward to speaking to you soon.
                     </div>
             </div>
-            
         </div>
+        <img src="./assets/assets/semi circle.svg" class="shape shape--0"> 
+        <img src="./assets/assets/circle.svg" class="shape shape--1"> 
+        <img src="./assets/assets/squiggly.svg" class="shape shape--2"> 
+        <img src="./assets/assets/circle.svg" class="shape shape--4"> 
+        <img src="./assets/assets/triangle.svg" class="shape shape--3"> 
+        <img src="./assets/assets/circle.svg" class="shape shape--5"> 
+        <img src="./assets/assets/squiggly.svg" class="shape shape--6"> 
+        <img src="./assets/assets/circle.svg" class="shape shape--7"> 
+        <img src="./assets/assets/semi circle.svg" class="shape shape--8"> 
     </section>
     <section id="projects">
         <div class="container">
@@ -256,7 +266,7 @@
                     <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
                         LinkedIn
                     </a>
-                    <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
+                    <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
                         Contact
                     </a>
                     <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white">
